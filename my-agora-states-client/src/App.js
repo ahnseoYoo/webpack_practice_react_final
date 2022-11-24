@@ -1,5 +1,7 @@
+import { hot } from 'react-hot-loader/root';
 import { Form, Discussions } from "./components";
 import { useEffect, useState } from "react";
+
 
 function App() {
   const domain = "http://localhost:3001";
@@ -50,6 +52,7 @@ function App() {
   return (
     <>
       <h1>My Agora States!</h1>
+      <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/905909-Center-1"></img>
       <Form addDiscussion={addDiscussion}></Form>
       <Discussions
         discussions={discussions}
@@ -59,4 +62,4 @@ function App() {
   );
 }
 
-export default App;
+export default hot(App);
